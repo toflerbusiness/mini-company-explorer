@@ -37,7 +37,7 @@ export default function SearchPage() {
       };
 
       searchCompanies();
-    }, 1000);
+    }, 500);
 
     return () => clearTimeout(timer);
   }, [query]);

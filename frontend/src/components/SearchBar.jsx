@@ -3,7 +3,6 @@ export default function SearchBar({ query, setQuery }) {
   return (
     <div className="flex justify-center items-center h-full">
       <div className="relative flex items-center w-full max-w-xl">
-        {/* Gray background for icon area */}
         <div className="absolute left-0 h-full w-15 flex items-center justify-center bg-gray-700 rounded-l-xl">
           <Search className="text-white" size={26} />
         </div>
