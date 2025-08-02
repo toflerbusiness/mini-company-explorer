@@ -62,6 +62,4 @@ Open any browser (like chrome) and hit this url -
 
 ---
 
-## 🚀 Getting Started
 
----
