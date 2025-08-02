@@ -1,27 +1,29 @@
-### 📄 **README.md**
-
 # Mini Company Explorer
 
 A simple React + Flask app to test basic front-end skills.
 
 ---
 
-## 🎯 Objective
+## Screen Short
 
-Create a front-end React app that:
-- Lets users search for companies
-- Lists search results
-- Shows details of a selected company
+**1. Search Page**
+![image](./Search%20Page.png)
 
-The basic look and feel of the search page and the company
-information page can be found in the samples directory.
+**2. List of Search Result**
+![image](./List%20Search%20result.png)
 
----
+**3. Company Deatail Page**
+![image](./Company%20Detail%20Page.png)
 
-## 🛠 Tech Stack
+**4. Page Not Found**
+![image](./PageNotFound.png)
+
+## 🛠 Tech Stack / Tool Used
 
 - Frontend: React (via Vite)
 - Backend: Flask (Python 3)
+- Tailwind css : For rapid UI development with utility-first CSS classes
+- JS - Debouncing Technique
 
 ---
 
@@ -30,18 +32,18 @@ information page can be found in the samples directory.
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourname/mini-company-explorer.git
+git clone https://github.com/Adarsh2014/mini-company-explorer.git
 cd mini-company-explorer
 ```
 
 ### 2. Start the backend
 
 ```bash
-cd backend
-python3 -m venv venv
-source venv/bin/activate
-pip install -r ../requirements.txt
-python app.py
+(1)cd backend
+(2)python -m venv venv
+(3).\venv\Scripts\activate
+(4)pip install -r ../requirements.txt
+(5)python app.py
 ```
 
 The backend runs at:  
@@ -50,60 +52,14 @@ The backend runs at:
 ### 3. Start the frontend
 
 ```bash
-cd frontend
-npm install
-npm run dev
+1.cd frontend
+2.npm install
+3.npm run dev
 ```
 
-The frontend runs at:  
-**http://localhost:5173**
+Open any browser (like chrome) and hit this url -
+**http://localhost:5176**
 
 ---
 
-## 🧪 What You Need to Build (Frontend)
 
-1. **Search Page**
-   - A text input + search button
-   - List of companies matching the query
-
-2. **Detail Page**
-   - Shows detailed info for the selected company
-
-3. **Routing**
-   - Use React Router or a similar library to manage views
-
-4. **Optional Features (Bonus)**
-   - Loading and error handling
-   - Clean styling using CSS or a UI framework (e.g., Bootstrap or Tailwind)
-   - Modular component design
-
----
-
-## 📬 API Endpoints
-
-### `GET /api/companies?q=term`
-- **Description:** Search for companies matching the query string.
-- **Returns:** List of `{ id, name, industry }`
-
-### `GET /api/companies/<id>`
-- **Description:** Get full details of a single company by ID.
-- **Returns:** `{ id, name, industry, description, founded_year, location }`
-
----
-
-## 📦 Submission Instructions
-
-- Fork this repository
-- Complete your implementation
-- Push to your forked repo
-- Share the link with us
-
----
-
-## ✅ Evaluation Criteria
-
-- Correctness of functionality
-- Code readability and structure
-- Use of React best practices
-- API integration
-- Bonus: UI/UX polish and extra effort
